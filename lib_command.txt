@@ -1,0 +1,1 @@
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/WAVE/users/unix/smalladi/.conda/envs/venv/lib
