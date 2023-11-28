@@ -1,7 +1,7 @@
 #!/bin/bash 
 # 
 #SBATCH --job-name=hecktor 
-#SBATCH --output=/WAVE/users/unix/smalladi/varian_ml/logs/outputlogs-%j.out 
+#SBATCH --output=/WAVE/users/unix/smalladi/varian_ml/MedicalImaging/logs/outputlogs-%j.out 
 # 
 #SBATCH --partition=gpu
 #SBATCH --nodes=1 
@@ -15,5 +15,5 @@
 #
 module load Anaconda3
 conda activate venv
-cd /WAVE/users/unix/smalladi/varian_ml/Sreeja_temp
-python train.py
+cd /WAVE/users/unix/smalladi/varian_ml/MedicalImaging
+python train_folds.py
